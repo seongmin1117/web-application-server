@@ -6,3 +6,20 @@
 /.idea
 *.iml
 .DS_Store
+
+
+# Gradle Wrapper 파일 (생성된 파일들)
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+
+# Gradle 빌드 파일에 의해 생성된 빌드 아티팩트 및 캐시
+/build/
+
+# Gradle Daemon 프로세스 파일
+/.gradle/
+
+# Gradle 캐시
+~/.gradle/
+
+# Windows 환경에서 생성되는 파일
+Thumbs.db
