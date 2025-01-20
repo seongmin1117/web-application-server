@@ -13,21 +13,25 @@ repositories {
 }
 
 dependencies {
+
+    // SLF4J 로깅 라이브러리
+    implementation 'org.slf4j:slf4j-api:2.0.0-alpha1'
+
     // Unit testing
-    testImplementation 'junit:junit:4.11'
+    testImplementation 'junit:junit:4.13.1'
 
     // Guava
-    implementation 'com.google.guava:guava:18.0'
+    implementation 'com.google.guava:guava:32.0.1-android'
 
     // Logger
-    implementation 'ch.qos.logback:logback-classic:1.1.2'
+    implementation 'ch.qos.logback:logback-classic:1.4.12'
 }
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
 
-tasks.withType(Javadoc) {
+tasks.withType(Javadoc).configureEach {
     options.encoding = 'UTF-8'
 }
 
